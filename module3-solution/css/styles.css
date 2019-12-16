@@ -1,0 +1,198 @@
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #adefd1;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+/** HEADER **/
+#header-nav {
+    background-color: #00203f;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand h1 {
+    /*NavBar Heading*/
+    font-family: 'Girassol', cursive;
+    color: #a1cd45;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px #000000;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 0.75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+#nav-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#nav-list a {
+    color: #8ed4c7;
+    text-align: center;
+}
+
+#nav-list a:hover {
+    background: #6ea41d;
+    color: #000;
+}
+
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 1px solid #8bc219;
+}
+
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -40px;
+    margin-bottom: 20px;
+}
+
+#collapsable-nav {
+    border-top: 0;
+}
+
+/*Main-Content*/
+#main-content {
+    width: 90%;
+}
+
+#main-title {
+    font-family: 'Ubuntu', sans-serif;
+    color: #000;
+    font-weight: 500;
+}
+
+section {
+    /* border: 1px solid black; */
+    background-color: #D7EBC7;
+}
+
+section>p {
+    padding: 10px 10px 10px 10px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #000;
+}
+
+.sec_head {
+    padding-top: 15px;
+    color: #1e1c58;
+    font-weight: bold;
+}
+
+section p span {
+    font-weight: bold;
+}
+
+/*Media Queries*/
+@media (min-width: 1200px) {
+    #header-nav {
+        height: 80px;
+    }
+
+    #head-container {
+        height: inherit;
+    }
+
+    .navbar-header {
+        height: inherit;
+    }
+
+    .navbar-brand {
+        height: inherit;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-brand h1 {
+        line-height: 80px;
+    }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /* Header */
+    #header-nav {
+        height: 80px;
+    }
+
+    #head-container {
+        height: inherit;
+    }
+
+    .navbar-header {
+        height: inherit;
+    }
+
+    .navbar-brand {
+        height: inherit;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-brand h1 {
+        line-height: 80px;
+    }
+
+    /* End Header */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    #header-nav {
+        height: 80px;
+    }
+
+    #head-container {
+        height: inherit;
+    }
+
+    .navbar-header {
+        height: inherit;
+    }
+
+    .navbar-brand {
+        height: inherit;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .navbar-brand h1 {
+        line-height: 80px;
+    }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+
+    /* Header */
+    .navbar-brand {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 60px;
+        top: 50%;
+        transform: translateY(7px);
+    }
+
+    .navbar-brand h1 {
+        font-size: 6.8vw;
+        /* 1vw = 1% of viewport width */
+        line-height: 60px;
+    }
+
+    #collapsable-nav a {
+        /* Collapsed nav menu text */
+        font-size: 1.2em;
+    }
+
+    /* End Header */
+}
